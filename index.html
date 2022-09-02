@@ -1,0 +1,321 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="Instagram-logo-transparent-PNG.png"
+      type="image/x-icon"
+    />
+    <title>Instagram Design Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="god-container">
+      <div class="tabs-con">
+        <!-- MAIN CONTAINER -->
+        <div class="main-container active" data-tab-content id="home">
+          <div class="main-inner-con">
+            <!-- NAVBAR -->
+            <div class="nav-bar">
+              <div class="logo">
+                <h1><a href="#">Instagram</a></h1>
+
+                <i class="fa fa-solid fa-angle-down"></i>
+              </div>
+              <i class="fa-light fa-plus"></i>
+              <i
+                class="fa-brands fa-facebook-messenger msg-ico"
+                data-tab-target="#msg-section"
+              ></i>
+            </div>
+            <!-- STORY CONTAINER -->
+            <div class="story-container">
+              <div class="story-card">
+                <div class="img-con bg-none">
+                  <img
+                    src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt=""
+                  />
+                </div>
+                <div class="owner-name">Your Story</div>
+              </div>
+            </div>
+            <!-- END OF STORY CONTAINER -->
+            <!-- STORY FEATURE CONtainer -->
+            <div class="story-img-container">
+              <div class="story-img-inner-container">
+                <div class="progress-bar">
+                <div class="progress-bar-back"></div>
+                  <div class="progress-bar-front"></div>
+                </div>
+  
+                </div>
+              </div>
+            </div>
+            <!-- End of STORY FEATURE CONtainer -->
+
+            <!-- FEED CARD CONTAINER -->
+            <div class="feed-card-container"></div>
+            <!-- END OF FEED CARD CONTAINER -->
+          </div>
+        </div>
+        <!-- END OF MAIN CONTAINER -->
+
+        <!-- SEARCH RESULT CONTAINER -->
+        <div id="search-resutls" data-tab-content class="search-resutl">
+          <div class="input-box">
+            <i class="fa fa-thin fa-magnifying-glass"></i>
+            <input
+              type="text"
+              name=""
+              id="search-input-box"
+              placeholder="Search"
+            />
+          </div>
+          <div class="scarch-inner-div"></div>
+        </div>
+        <!-- END OF SEARCH RESULT CONTAINER -->
+
+        <!-- MESSAGE SECTION -->
+        <div id="msg-section" data-tab-content class="">
+          <div class="msg-inner-div">
+            <div class="msg-section-header padding-15">
+              <div class="msg-logo">
+                <i class="fa-solid fa-arrow-left" data-tab-target="#home"></i>
+                <h2>sundaram_dm</h2>
+                <i class="fa fa-solid fa-angle-down arrow-down"></i>
+              </div>
+              <i class="fa fa-light fa-ellipsis"></i>
+              <i class="fa fa-light fa-pen-to-square"></i>
+            </div>
+            <div class="search-section-msg padding-15">
+              <div class="input-box">
+                <i class="fa fa-thin fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  name=""
+                  id="search-input-box"
+                  placeholder="Search"
+                />
+              </div>
+              <a href="#">Filter</a>
+            </div>
+
+            <!-- MSG SEARCH TABS -->
+            <div class="msg-box-tabs">
+              <ul class="msg-box-tab">
+                <li
+                  data-tabs-target="#primary-msg-id"
+                  data-left="0"
+                  class="active-border"
+                >
+                  Primary
+                </li>
+                <li data-tabs-target="#gen-msg" data-left="1">General</li>
+                <li data-tabs-target="#request-msg" data-left="2">Requests</li>
+                <div class="border-div"></div>
+              </ul>
+            </div>
+
+            <div class="tabs-content-msg">
+              <!-- PRIMARY MSG -->
+              <div
+                class="primary-msg-section dis-active msg-tabs"
+                id="primary-msg-id"
+                data-tabs-content
+              ></div>
+              <!-- END OF PRIMARY TAG -->
+
+              <!-- general MSG -->
+              <div
+                class="general-msg-setion msg-tabs padding-15"
+                data-tabs-content
+                id="gen-msg"
+              >
+                <div class="gen-msg-inner-div">
+                  <div class="general-msg-info">
+                    <h4>Your general messages</h4>
+                    <p>
+                      Notifications are off for messages that you move here, but
+                      you can turn them on at any time
+                    </p>
+                    <a href="#">Go to Notification Settings</a>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF general TAG -->
+
+              <!-- Request MSG -->
+              <div
+                class="general-msg-setion msg-tabs padding-15"
+                data-tabs-content
+                id="request-msg"
+              >
+                <div class="gen-msg-inner-div">
+                  <div class="general-msg-info">
+                    <h4>No message request</h4>
+                    <p>
+                      Notifications are off for messages that you move here, but
+                      you can turn them on at any time
+                    </p>
+                    <a href="#">Go to Notification Settings</a>
+                  </div>
+                </div>
+              </div>
+              <!-- END OF general TAG -->
+            </div>
+          </div>
+        </div>
+
+        <!-- PROFILE SECTION -->
+        <div id="profile-section" data-tab-content>
+          <div class="inner-pro-sec">
+            <div class="profile-header msg-section-header padding-15">
+                <div class="msg-logo">
+                  <h2>sundaram_dm</h2>
+                  <i class="fa fa-solid fa-angle-down arrow-down"></i>
+                </div>
+                <i class="fa fa-light fa-plus"></i>
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="profile-main-info padding-15">
+                <div class="profile-pic">
+                  <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                </div>
+
+                <!-- Profile Stats -->
+                <div class="profile-stats">
+                  <div class="posts stat">
+                  <h3>23</h3>
+                  <h4>Posts</h4>
+                  </div>
+                  <div class="followers stat">
+                    <h3>83</h3>
+                    <h4>Followers</h4>
+                  </div>
+                  <div class="following stat">
+                    <h3>94</h3>
+                    <h4>Following</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TEXT INFO -->
+              <div class="profile-text-info padding-15">
+                <p class="name-owner">Sundaram Dutta Modak</p>
+                <p class="deg">Writer</p>
+                <p class="status">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, perferendis!</p>
+              </div>
+
+              <!-- profile Button -->
+              <div class="profile-btn-con padding-15">
+                <div class="edit pro-btn">Edit Profile</div>
+                <div class="ad pro-btn">Ad Tools</div>
+                <div class="insights pro-btn">Insights</div>
+              </div>
+
+              <!-- HIGHLIGHT SECTION -->
+              <div class="high-section padding-15">
+                <div class="hign-card profile-pic">
+                  <img src="https://picsum.photos/180?random=9" alt="">
+                  <p class="high-card-info">Highlights</p>
+                </div>
+                
+                <div class="hign-card profile-pic">
+                  <img src="https://picsum.photos/180?random=89" alt="">
+                  <p class="high-card-info">Vacation</p>
+                </div>
+                
+                <div class="hign-card profile-pic">
+                  <img src="https://picsum.photos/180?random=12" alt="">
+                  <p class="high-card-info">School</p>
+                </div>
+                
+                <div class="hign-card profile-pic">
+                  <img src="https://picsum.photos/180?random=35" alt="">
+                  <p class="high-card-info">Me Time</p>
+                </div>
+                
+                <div class="hign-card profile-pic">
+                  <img src="https://picsum.photos/180?random=475" alt="">
+                  <p class="high-card-info">Study</p>
+                </div>
+
+                <div class="hign-card profile-pic">
+                  <i class="fa fa-light fa-plus"></i>
+                  <p class="high-card-info">New</p>
+                </div>
+              </div>
+
+              <!-- post tab section -->
+              <div class="bottom-section">
+              <div class="profile-tabs-section">
+                <i class="fa fa-light fa-pause" data-i-target="#pro-post" data-index="0"></i> </i>
+                <i class="fa fa-brands fa-square-instagram" data-i-target="#pro-reels" data-index="1" ></i>
+                <i class="fa fa-light fa-play" data-i-target="#pro-video" data-index="2" ></i>
+                <i class="fa fa-light fa-user" data-i-target="#pro-tags" data-index="3"></i>
+                <div class="bottom-bar"></div>
+              </div>
+              <div class="profile-tab-content-sec">
+                <div id="pro-post" data-i-content class="active">
+                  <div class="post-inner-con-pro">
+                  </div>
+                </div>
+                <!-- REELS TAB SECTION -->
+                <div id="pro-reels" data-i-content>
+                  <div class="reels-div">
+                
+                  </div>
+                </div>
+                <div id="pro-video" data-i-content >
+                  <div class="video-div reels-div">
+
+                  </div></div>
+                <div id="pro-tags" data-i-content >
+                  <div class="inner-tag"> 
+                    <i class="fa fa-light fa-user tag-user"></i>
+                    <div class="text-info">
+                    <h3>Photos and Videos of you</h3>
+                    <p>When people tag you in photos and videos, they'll appear here. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BOTTOM ICON CONTAINER -->
+    <div class="bottom-icon-con">
+      <i class="fas fa-home" data-tab-target="#home" onclick="scrollTo0()"></i>
+      <i
+        class="fa fa-light fa-magnifying-glass"
+        id="mag-glass"
+        data-tab-target="#search-resutls"
+      ></i>
+      <i class="fa-brands fa-square-instagram"></i>
+      <i class="fa fa-thin fa-heart"></i>
+      <img
+        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt=""
+        class="small-img-icon " 
+        data-tab-target="#profile-section"
+        id="pro-ico"
+      />
+    </div>
+    <!-- END OF BOTTOM ICON CONTAINER -->
+
+    <!-- END OF GOD CONTAINER -->
+  </body>
+</html>
